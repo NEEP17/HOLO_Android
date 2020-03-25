@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".ShoppingCartActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:id="@+id/txt_mart_name"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:text="홈플러스 사당점" />
+
+        <View
+            android:layout_width="120dp"
+            android:layout_height="5dp"
+            android:layout_gravity="center"
+            android:background="#FA8D00"/>
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/mart_img" />
+    </LinearLayout>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:text="LIST" />
+            <View
+                android:layout_width="120dp"
+                android:layout_height="5dp"
+                android:layout_gravity="center"
+                android:background="#FA8D00"/>
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:padding="5dp"
+                android:text="<식재료>" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_shop_list_main_overview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                android:layout_marginBottom="60dp">
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:padding="5dp"
+                android:text="<조미료>" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_shop_list_sub_overview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                android:layout_marginBottom="60dp">
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:text="ADD" />
+            <View
+                android:layout_width="120dp"
+                android:layout_height="5dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"
+                android:background="#FA8D00"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_shop_list_add_overview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                android:layout_marginBottom="60dp">
+            </androidx.recyclerview.widget.RecyclerView>
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_ocr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="OCR" />
+
+        <Button
+            android:id="@+id/btn_fresh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FRESH" />
+
+        <Button
+            android:id="@+id/btn_pay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PAY" />
+
+        <TextView
+            android:padding="15dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:gravity="bottom"
+            android:id="@+id/txt_total"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="000,000 원" />
+    </LinearLayout>
+</LinearLayout>
