@@ -66,10 +66,10 @@
                 android:layout_height="wrap_content"
                 android:textSize="15dp"
                 android:padding="5dp"
-                android:text="<식재료>" />
+                android:text="식재료" />
 
             <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/rv_shop_list_main_overview"
+                android:id="@+id/rv_shop_list_main"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:nestedScrollingEnabled="false"
@@ -82,10 +82,10 @@
                 android:layout_height="wrap_content"
                 android:textSize="15dp"
                 android:padding="5dp"
-                android:text="<조미료>" />
+                android:text="조미료" />
 
             <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/rv_shop_list_sub_overview"
+                android:id="@+id/rv_shop_list_sub"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:nestedScrollingEnabled="false"
