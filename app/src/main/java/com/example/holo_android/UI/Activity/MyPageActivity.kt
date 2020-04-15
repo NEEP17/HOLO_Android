@@ -6,7 +6,8 @@ import com.example.holo_android.R
 
 class MyPageActivity: AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
+
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_shopping_cart)
+        setContentView(R.layout.activity_mypage)
     }
 }
