@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">Holo_Android</string>
+    <string name="holo_capital">HOLO</string>
+    <string name="holo_logo">Holo</string>
+    <string name="holo">holo</string>
 </resources>
